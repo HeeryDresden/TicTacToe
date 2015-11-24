@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Tic Tac Toe</title>
+
+  <link rel="stylesheet" type="text/css" href="css/gamepad.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body>
+  <section class="game">
+
+    <section class="banner"><h2 id="victorBanner"></h2></section>
+
+    <section class="pad">
+      <div class="gp-col">
+        <div class="gp-cell tl"></div>
+        <div class="gp-cell cl"></div>
+        <div class="gp-cell bl"></div>
+      </div>
+      <div class="gp-col">
+        <div class="gp-cell tc"></div>
+        <div class="gp-cell cc"></div>
+        <div class="gp-cell bc"></div>
+      </div>
+      <div class="gp-col">
+        <div class="gp-cell tr"></div>
+        <div class="gp-cell cr"></div>
+        <div class="gp-cell br"></div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <span><strong>Play as:</strong></span>
+      <a id="play_as_x" class="player_selection xSvg" onclick="resetGame(this);"></a>
+      <a id="play_as_o" class="player_selection oSvg" onclick="resetGame(this);"></a>
+    </section>
+
+  </section>
+
+  <script src="js/game.js"></script>
+  <script src="js/game_ai.js"></script>
+  <script src="js/game_events.js"></script>
+
+</body>
+</html>
